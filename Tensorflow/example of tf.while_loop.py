@@ -1,9 +1,11 @@
 """
 Author: Suesarn Wilainuch
+
+example of tf.while_loop()
 """
 import tensorflow as tf
 
-# example of tf.while_loop()
+
 
 # Python with normal numerical
 def loop_sum(n):
