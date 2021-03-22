@@ -6,10 +6,10 @@ Example of Tensorflow implementation of multi-conditional element-wise and contr
 
 import tensorflow as tf
 
-class MultiConditionLayer(tf.keras.layers.Layer):
+class MultiConditionalLayer(tf.keras.layers.Layer):
     def __init__(self, S=None, name=None, *args, **kwargs):
         
-        super(MultiConditionLayer, self).__init__(*args, **kwargs)
+        super(MultiConditionalLayer, self).__init__(*args, **kwargs)
         self.s0 = tf.cast(S[0], tf.float32)
         self.s1 = tf.cast(S[1], tf.float32)
         self.pos_INF = tf.constant(np.inf)
