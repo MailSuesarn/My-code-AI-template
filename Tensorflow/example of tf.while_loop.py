@@ -1,6 +1,7 @@
 """
 Author: Suesarn Wilainuch
 """
+import tensorflow as tf
 
 # example of tf.while_loop()
 
@@ -37,8 +38,6 @@ def loop_sum_tf(n):
     result = tf.while_loop(condition, body, index_summation)[1]
     return result
     
-
-
 n = 5
 result = loop_sum_tf(n)
 print(result)
