@@ -1,3 +1,7 @@
+from tensorflow.python.keras.engine.base_layer import Layer
+from tensorflow.python.ops import math_ops
+import tensorflow as tf
+
 class LogTransform(Layer):
   """Normalization inputs by the following log transform
   x = log(x + 1 - min(x))
