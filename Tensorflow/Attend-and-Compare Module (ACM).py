@@ -1,3 +1,9 @@
+"""
+Author: Suesarn Wilainuch
+Attend-and-Compare Module (ACM) tensorflow 2 version
+Paper reference: https://arxiv.org/abs/2007.07506
+"""
+
 import tensorflow as tf
 
 class AttendModule(tf.keras.layers.Layer):
@@ -95,7 +101,7 @@ class ACM(tf.keras.layers.Layer):
 
 
 
-# Test ACM
+# Test: ACM layer
 input_shape = (2, 2, 2, 2)
 x = tf.random.normal(input_shape)
 
@@ -108,6 +114,7 @@ print(y.shape)
 print(dp.shape)
 
 
+# Test: create model by using ACM layer 
 def model():
   image_shape = (128, 128, 3)
   in_img = tf.keras.Input(image_shape)
